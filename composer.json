@@ -9,7 +9,6 @@
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10",
         "livewire/flux": "^2.0",
-        "livewire/flux-pro": "^2.0",
         "livewire/livewire": "^3.0",
         "host-uk/core": "^1.0",
         "host-uk/core-admin": "^1.0",
@@ -37,12 +36,7 @@
             "Tests\\": "tests/"
         }
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://composer.fluxui.dev"
-        }
-    ],
+    "repositories": [],
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",

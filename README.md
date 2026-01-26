@@ -106,6 +106,21 @@ class Boot
 | `host-uk/core-api` | REST API with scopes & webhooks |
 | `host-uk/core-mcp` | Model Context Protocol tools |
 
+## Flux Pro (Optional)
+
+This template uses the free Flux UI components. If you have a Flux Pro license:
+
+```bash
+# Configure authentication
+composer config http-basic.composer.fluxui.dev your-email your-license-key
+
+# Add the repository
+composer config repositories.flux-pro composer https://composer.fluxui.dev
+
+# Install Flux Pro
+composer require livewire/flux-pro
+```
+
 ## Documentation
 
 - [Core PHP Framework](https://github.com/host-uk/core-php)
