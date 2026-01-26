@@ -10,10 +10,10 @@
         "laravel/tinker": "^2.10",
         "livewire/flux": "^2.0",
         "livewire/livewire": "^3.0",
-        "host-uk/core": "^1.0",
-        "host-uk/core-admin": "^1.0",
-        "host-uk/core-api": "^1.0",
-        "host-uk/core-mcp": "^1.0"
+        "host-uk/core": "dev-main",
+        "host-uk/core-admin": "dev-main",
+        "host-uk/core-api": "dev-main",
+        "host-uk/core-mcp": "dev-main"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -22,7 +22,8 @@
         "laravel/sail": "^1.41",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.6",
-        "phpunit/phpunit": "^11.5"
+        "pestphp/pest": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.0"
     },
     "autoload": {
         "psr-4": {
@@ -36,7 +37,12 @@
             "Tests\\": "tests/"
         }
     },
-    "repositories": [],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/host-uk/core-php.git"
+        }
+    ],
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",

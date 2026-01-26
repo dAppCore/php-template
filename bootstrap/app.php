@@ -6,8 +6,11 @@ use Illuminate\Foundation\Configuration\Middleware;
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withProviders([
-        // Core PHP Framework Packages
-        \Core\CoreServiceProvider::class,
+        // Core PHP Framework
+        \Core\LifecycleEventProvider::class,
+        \Core\Website\Boot::class,
+        \Core\Front\Boot::class,
+        \Core\Mod\Boot::class,
     ])
     ->withRouting(
         web: __DIR__.'/../routes/web.php',
@@ -16,7 +19,7 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        //
+        \Core\Front\Boot::middleware($middleware);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
