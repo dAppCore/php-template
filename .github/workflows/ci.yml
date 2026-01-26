@@ -8,6 +8,7 @@ on:
 
 jobs:
   tests:
+    if: github.event.repository.visibility == 'public'
     runs-on: ubuntu-latest
 
     strategy:
@@ -46,6 +47,7 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
 
   assets:
+    if: github.event.repository.visibility == 'public'
     runs-on: ubuntu-latest
     name: Assets
 

@@ -10,6 +10,7 @@ permissions:
 
 jobs:
   release:
+    if: github.event.repository.visibility == 'public'
     runs-on: ubuntu-latest
     name: Create Release
 
