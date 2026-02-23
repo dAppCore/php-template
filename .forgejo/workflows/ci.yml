@@ -46,6 +46,11 @@ jobs:
           composer config repositories.mcp path ../php-mcp --no-interaction
           composer config --unset repositories.0 --no-interaction 2>/dev/null || true
 
+      - name: Allow composer plugins
+        run: |
+          composer config allow-plugins.pestphp/pest-plugin true --no-interaction
+          composer config allow-plugins.php-http/discovery true --no-interaction 2>/dev/null || true
+
       - name: Install dependencies
         run: composer install --prefer-dist --no-interaction --no-progress
 
