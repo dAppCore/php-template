@@ -2,7 +2,13 @@
     "name": "host-uk/core-template",
     "type": "project",
     "description": "Core PHP Framework - Project Template",
-    "keywords": ["laravel", "core-php", "modular", "framework", "template"],
+    "keywords": [
+        "laravel",
+        "core-php",
+        "modular",
+        "framework",
+        "template"
+    ],
     "license": "EUPL-1.2",
     "require": {
         "php": "^8.2",
@@ -40,8 +46,9 @@
     },
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://github.com/host-uk/core-php.git"
+            "name": "core",
+            "type": "path",
+            "url": "../php-framework"
         }
     ],
     "scripts": {
