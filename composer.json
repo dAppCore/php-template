@@ -1,5 +1,5 @@
 {
-    "name": "host-uk/core-template",
+    "name": "lthn/php-template",
     "type": "project",
     "description": "Core PHP Framework - Project Template",
     "keywords": [
@@ -16,10 +16,10 @@
         "laravel/tinker": "^2.10",
         "livewire/flux": "^2.0",
         "livewire/livewire": "^3.0",
-        "host-uk/core": "dev-main",
-        "host-uk/core-admin": "dev-main",
-        "host-uk/core-api": "dev-main",
-        "host-uk/core-mcp": "dev-main"
+        "lthn/php": "dev-main",
+        "lthn/php-admin": "dev-main",
+        "lthn/php-api": "dev-main",
+        "lthn/php-mcp": "dev-main"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -86,5 +86,8 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "replace": {
+        "host-uk/core-template": "self.version"
+    }
 }

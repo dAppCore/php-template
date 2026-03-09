@@ -1,8 +1,8 @@
 # Core PHP Framework Project
 
-[![CI](https://github.com/host-uk/core-template/actions/workflows/ci.yml/badge.svg)](https://github.com/host-uk/core-template/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/host-uk/core-template/graph/badge.svg)](https://codecov.io/gh/host-uk/core-template)
-[![PHP Version](https://img.shields.io/packagist/php-v/host-uk/core-template)](https://packagist.org/packages/host-uk/core-template)
+[![CI](https://github.com/lthn/php-template/actions/workflows/ci.yml/badge.svg)](https://github.com/lthn/php-template/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/lthn/php-template/graph/badge.svg)](https://codecov.io/gh/lthn/php-template)
+[![PHP Version](https://img.shields.io/packagist/php-v/lthn/php-template)](https://packagist.org/packages/lthn/php-template)
 [![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20?logo=laravel)](https://laravel.com)
 [![License](https://img.shields.io/badge/License-EUPL--1.2-blue.svg)](LICENSE)
 
@@ -26,7 +26,7 @@ A modular monolith Laravel application built with Core PHP Framework.
 
 ```bash
 # Clone or create from template
-git clone https://github.com/host-uk/core-template.git my-project
+git clone https://github.com/lthn/php-template.git my-project
 cd my-project
 
 # Install dependencies
@@ -107,10 +107,10 @@ class Boot
 
 | Package | Description |
 |---------|-------------|
-| `host-uk/core` | Core framework components |
-| `host-uk/core-admin` | Admin panel & Livewire modals |
-| `host-uk/core-api` | REST API with scopes & webhooks |
-| `host-uk/core-mcp` | Model Context Protocol tools |
+| `lthn/php` | Core framework components |
+| `lthn/php-admin` | Admin panel & Livewire modals |
+| `lthn/php-api` | REST API with scopes & webhooks |
+| `lthn/php-mcp` | Model Context Protocol tools |
 
 ## Flux Pro (Optional)
 
