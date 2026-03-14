@@ -18,7 +18,7 @@
         "livewire/livewire": "^3.0",
         "lthn/php": "dev-main",
         "lthn/php-admin": "dev-main",
-        "lthn/php-api": "dev-main",
+        "lthn/api": "dev-main",
         "lthn/php-mcp": "dev-main"
     },
     "require-dev": {
