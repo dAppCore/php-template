@@ -51,14 +51,14 @@ php artisan make:mod Blog --web      # Web routes only
 php artisan make:mod Blog --api      # API routes only
 
 # Testing
-vendor/bin/pest                      # Run all tests
+composer test                        # Run all tests (Pest)
 vendor/bin/pest tests/Feature        # Run feature tests only
 vendor/bin/pest --filter="test name" # Run single test by name
 vendor/bin/pest path/to/TestFile.php # Run single test file
 
 # Code quality
+composer lint                        # Fix code style (Pint)
 vendor/bin/pint --dirty              # Format changed files only
-vendor/bin/pint                      # Format all files
 ```
 
 ## Module Structure
@@ -82,7 +82,7 @@ app/Mod/Blog/
 |---------|-----------|---------|
 | `lthn/php` | `Core\` | Framework core, events, module discovery |
 | `lthn/php-admin` | `Core\Admin\` | Admin panel, Livewire modals |
-| `lthn/php-api` | `Core\Api\` | REST API, scopes, rate limiting, webhooks |
+| `lthn/api` | `Core\Api\` | REST API, scopes, rate limiting, webhooks |
 | `lthn/php-mcp` | `Core\Mcp\` | Model Context Protocol for AI agents |
 
 ## Testing
